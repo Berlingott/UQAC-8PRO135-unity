@@ -1,11 +1,13 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Scenes.End_component
 {
     public class EndComingBackToMenu : MonoBehaviour
     {
         public int countdownTime;
+        public int levelindex;
 
         private void Start()
         {
@@ -20,9 +22,7 @@ namespace Scenes.End_component
 
                 countdownTime--;
             }
-
-        
-
+            SceneManager.LoadScene(levelindex);
         }
     
     }
