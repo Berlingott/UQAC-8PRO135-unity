@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
 {
     public int countdownTime;
     public  Text countdownDisplay;
+    public LoadingScreenEnter loadingfunction;
 
     private void Start()
     {
@@ -26,6 +27,6 @@ public class Timer : MonoBehaviour
         }
 
         countdownDisplay.text = "0";
-
+        loadingfunction.LoadNextLevel();
     }
 }
